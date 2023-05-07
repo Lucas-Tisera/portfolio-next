@@ -1,6 +1,7 @@
 import Link from "next/link"
 
 const fetchSinglePost = async(id) => {
+    
     return fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {next:{revalidate: 5}})
     .then(response => (response.json()))
 }

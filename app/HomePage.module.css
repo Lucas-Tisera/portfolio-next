@@ -1,0 +1,92 @@
+.home {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.homeContent{
+    max-width: 60rem;
+}
+
+.homeContent h1{
+    font-size: 5.6rem;
+    font-weight: 700;
+}
+
+.homeContent p{
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 2rem 0 4rem;
+}
+
+.textAnimate{
+    position: relative;
+    width: 32.8rem;
+}
+
+.textAnimate h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: .7px var(--main-color);
+}
+
+.btnContainer{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 34.5rem;
+    height: 5rem;
+}
+
+.btn{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 16rem;
+    height: 100%;
+    background-color: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: .8rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    color: var(--bg-color);
+    cursor: pointer;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn:hover{
+    color: var(--main-color);
+}
+
+.btn:nth-child(2){
+    background: transparent;
+    color: var(--main-color);
+}
+.btn:nth-child(2):hover{
+    background: transparent;
+    color: var(--bg-color);
+}
+.btn:nth-child(2):hover::before{
+    background: var(--main-color);
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+.btn:hover::before{
+    width: 100%;
+    background: var(--bg-color);
+}

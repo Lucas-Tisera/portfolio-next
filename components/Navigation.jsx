@@ -1,5 +1,6 @@
 import Link from "next/link"
 import styles from './Navigation.module.css'
+
 const links =[
     {
         label: 'Home',
@@ -8,17 +9,28 @@ const links =[
         label: 'About',
         route: '/about'
     },{
-        label: 'Posts',
-        route: '/posts'
+        label: 'Education',
+        route: '/education'
+    },{
+        label: 'Skills',
+        route: '/skills'
+    },{
+        label: 'Contact',
+        route: '/contact'
     }
 ]
 export function MainHeader(){
     return(
+      <>
         <header className={styles.header}>
-          <nav>
+          <nav className={styles.navigationContainer}>
+            <Link href="/" className={styles.logo}>
+              Lucas.T - Portfolio
+            </Link>
+            <div className="bx bx-menu" id={styles.menuIcon}/>
             <ul className={styles.navigation}>
                 {links.map(({label, route}) => (
-                  <li key={route}>
+                  <li key={route} className="active">
                     <Link href={route}>
                       {label}
                     </Link>
@@ -27,5 +39,6 @@ export function MainHeader(){
             </ul>
           </nav>
         </header>
+                </>
     )
 }
