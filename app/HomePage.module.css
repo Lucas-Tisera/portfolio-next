@@ -1,12 +1,12 @@
 .home {
     min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    padding: 5rem 9% 2rem;
     display: flex;
     align-items: center;
 }
 
 .homeContent{
-    max-width: 60rem;
+    max-width: 50%;
 }
 
 .homeContent h1{
@@ -89,4 +89,9 @@
 .btn:hover::before{
     width: 100%;
     background: var(--bg-color);
+}
+.contentContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

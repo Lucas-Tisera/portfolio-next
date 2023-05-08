@@ -1,0 +1,132 @@
+.navContainer {
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.nav {
+    padding: 0px;
+    margin: 0px;
+    color: var(--text-color);
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.navItemMenu{
+    width: 50px;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(77, 77, 77, 0.336);
+    border-top-left-radius:1rem ;
+    transition: .3s;    
+}
+.navItemMenu:hover{
+    background-color: rgba(129, 129, 129, 0.336);
+
+}
+
+.navItemName{
+    font-size: 1rem;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    transition: .3s;
+
+}
+.navItemControls{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    border-radius: 1rem;
+    margin-top: 2px;
+    transition: .3s;
+
+}
+.navItemControls:hover{
+    background-color: rgba(99, 99, 99, 0.336);
+}
+
+.navItemPorcent{
+    font-size: 1rem;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    transition: .3s;
+
+}
+
+.navItemFunction{
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 2rem;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    transition: .3s;
+
+}
+
+.navItemFunction:hover{
+    background-color: rgba(99, 99, 99, 0.336);
+}
+
+.navItemFunctionX{
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 2rem;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    border-top-right-radius:1rem ;
+    transition: .3s;
+
+}
+
+.navItemFunctionX:hover{
+    background-color: rgb(172, 0, 0);
+}
+.functionControllers{
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+}
+
+
+.pictureContainer{
+    width: 35%;
+    border : .1px solid var(--main-color);
+    border-radius: 1rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 0 4rem rgba(0, 0, 0, .5);
+    transition: .3s;
+
+}
+
+.pictureContainer:hover{
+    box-shadow: 0 0 4rem rgba(0, 0, 0, .8);
+}
+.picture{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    filter: brightness(.8);
+}
+

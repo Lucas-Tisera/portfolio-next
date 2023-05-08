@@ -19,6 +19,7 @@ a {
 }
 :root{
   --bg-color:#212A3E;
+  --bg-gradient-color:#292b2f;
   --second-bg-color:#394867;
   --text-color:#F1F6F9;
   --main-color:#00abf0;
@@ -33,6 +34,7 @@ a {
 }
 
 body{
-  background-color: var(--bg-color);
+  background: rgb(33,42,62);
+background: linear-gradient(135deg, rgba(33,42,62,1) 30%, rgba(41,43,47,1) 100%);
   color: var(--text-color);
 }
