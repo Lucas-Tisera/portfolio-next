@@ -1,0 +1,46 @@
+.redesContainer{
+    position: absolute;
+    bottom: 40px;
+    margin-top: 10px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.redesIcon{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid var(--main-color);
+    font-size: 20px;
+    color: var(--main-color);
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.redesIcon::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: var(--main-color);
+    z-index: -1;
+    transition: .3s;
+
+}
+.redesIcon:hover{
+    color: var(--text-color);
+    font-size: 30px;
+    border-radius: 1rem;
+}
+.redesIcon:hover::before{
+    width: 100%;
+}

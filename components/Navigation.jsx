@@ -28,6 +28,11 @@ export function MainHeader(){
               Lucas.T - Portfolio
             </Link>
             <div className="bx bx-menu" id={styles.menuIcon}/>
+            <div className={styles.starContainer}>
+              <span className="bx bxs-star" id={styles.star}/>
+              <span className="bx bxs-star" id={styles.star}/>
+              <span className="bx bxs-star" id={styles.star}/>
+            </div>
             <ul className={styles.navigation}>
                 {links.map(({label, route}) => (
                   <li key={route} className="active">

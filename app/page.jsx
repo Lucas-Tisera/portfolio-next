@@ -1,5 +1,6 @@
 import styles from './HomePage.module.css'
 import { WindowsImageViewer } from '@/components/ImageContainer'
+import { RedesLink } from '@/components/Redes'
 
 
 
@@ -17,9 +18,11 @@ export default function HomePage () {
             <a href="#" className={styles.btn}>Hire Me</a>
             <a href="#" className={styles.btn}>Let's Talk</a>
           </div>
+            <RedesLink/>
         </div>
         <WindowsImageViewer/>
       </div>
+      
     </section>
   )
 };

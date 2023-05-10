@@ -111,13 +111,13 @@
 
 
 .pictureContainer{
+    margin-top: 30px;
     width: 35%;
     border : .1px solid var(--main-color);
     border-radius: 1rem;
     background-color: var(--bg-color);
     box-shadow: 0 0 4rem rgba(0, 0, 0, .5);
     transition: .3s;
-
 }
 
 .pictureContainer:hover{
@@ -127,6 +127,10 @@
     width: 100%;
     height: auto;
     border-radius: 1rem;
-    filter: brightness(.8);
+    filter: brightness(.7);
+    transition: 2s;
 }
 
+.picture:hover{
+    filter: brightness(1);
+}
