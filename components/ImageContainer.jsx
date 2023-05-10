@@ -1,6 +1,6 @@
 import styles from './styles/ImageContainer.module.css'
 import Image from 'next/image'
-import mypic from '../public/myPictureFocusedAgain2.png'
+import mypic from '../public/static/myPictureFocusedAgain2.png'
 export function WindowsImageViewer(){
     return(
         <section className={styles.pictureContainer}>

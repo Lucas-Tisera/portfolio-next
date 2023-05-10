@@ -1,11 +1,13 @@
 import styles from './HomePage.module.css'
 import { WindowsImageViewer } from '@/components/ImageContainer'
 import { RedesLink } from '@/components/Redes'
+import { ExperienceTimeLine } from '@/components/ExperienceView'
 
 
 
 export default function HomePage () {
   return(
+    <>
     <section className={styles.home}>
       <div className={styles.contentContainer}>
         <div className={styles.homeContent}>
@@ -22,7 +24,8 @@ export default function HomePage () {
         </div>
         <WindowsImageViewer/>
       </div>
-      
     </section>
+    <ExperienceTimeLine/>
+    </>
   )
 };
