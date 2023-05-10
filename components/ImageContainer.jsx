@@ -13,7 +13,7 @@ export function WindowsImageViewer(){
                         <p>PictureUsedInMyPort...</p>
                     </li>
                     <li className={styles.navItemControls}>
-                        <div> ...</div>
+                        <div style={{marginBottom: "6px"}}>...</div>
                     </li>
                     <li className={styles.navItemControls}>
                         <div class='bx bx-zoom-out'></div>

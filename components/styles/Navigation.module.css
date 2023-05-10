@@ -4,6 +4,8 @@
     left: 0;
     width: 100%;
     padding: 2rem 9%;
+    /* AL SCROLLEAR */
+    /* background-color: var(--bg-color); */
 }
 .navigationContainer {
     display: flex;
