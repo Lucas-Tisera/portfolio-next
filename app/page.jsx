@@ -17,14 +17,15 @@ export default function HomePage () {
           </div>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium excepturi dolorem et vero odit ipsa delectus nam. Voluptatem perspiciatis molestiae qui laudantium omnis corporis fugit numquam! Facilis eos obcaecati alias!</p>
           <div className={styles.btnContainer}>
-            <a href="#" className={styles.btn}>Hire Me</a>
             <a href="#" className={styles.btn}>Let&apos;s Talk</a>
+            <a href="#" className={styles.btn}>Download CV</a>
           </div>
             <RedesLink/>
         </div>
         <WindowsImageViewer/>
       </div>
     </section>
+    
     <ExperienceTimeLine/>
     </>
   )

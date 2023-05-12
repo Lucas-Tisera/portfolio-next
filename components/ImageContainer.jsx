@@ -12,6 +12,8 @@ export function WindowsImageViewer(){
                     <li className={styles.navItemName}>
                         <p>PictureUsedInMyPort...</p>
                     </li>
+                    <div style={{"display":"flex", "justifyContent": "space-between", "width": "100%"}}>
+
                     <li className={styles.navItemControls}>
                         <div style={{marginBottom: "6px"}}>...</div>
                     </li>
@@ -21,6 +23,7 @@ export function WindowsImageViewer(){
                     <li className={styles.navItemControls}>
                         <div class='bx bx-zoom-in'></div>
                     </li>
+                    </div>
                     <li className={styles.navItemPorcent}>
                         <p>45 %</p>
                     </li>

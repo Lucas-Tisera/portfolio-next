@@ -1,14 +1,8 @@
-.timeLine{
-    position: relative;
-    max-width: 85%;
-    margin: 0 auto;
-}
+
 .container{
     padding: 10px 50px;
     position: relative;
     width: 50%;
-    animation: movedown 1s linear forwards;
-    opacity: 0;
 }
 .container:nth-child(1){
     animation-delay: 1s;
@@ -21,16 +15,6 @@
 }
 .container:nth-child(4){
     animation-delay: 4s;
-}
-@keyframes movedown {
-    0%{
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(-0px);
-    }
 }
 
 .textBox{
@@ -67,27 +51,6 @@
     left: -23px;
     z-index: 10;
 }
-.timeLine::after{
-    content: "";
-    position: absolute;
-    width: 6px;
-    height: 100%;
-    background: #fff;
-    top: 0;
-    left: 50%;
-    margin-left: -3px;
-    z-index: -1;
-    animation: moveline 4s linear forwards;
-}
-@keyframes moveline {
-    0%{
-        height: 0%;
-    }
-    100%{
-        height: 100%;
-    }
-
-}
 .textBox h2{
     color: var(--main-color);
     font-weight: 600;
@@ -118,4 +81,12 @@
     border-bottom: 15px solid transparent;
     border-right: 15px solid #fff;
     left: -15px;
+}
+@media screen and (max-width: 800px) {
+    .container{
+        width: 90%;
+    }
+    .containerRight{
+        left: 10%;
+    }
 }

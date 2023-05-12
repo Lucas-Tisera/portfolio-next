@@ -1,6 +1,6 @@
 .home {
     min-height: 100vh;
-    padding: 5rem 9% 2rem;
+    padding: 5% 9%;
     display: flex;
     align-items: center;
 }
@@ -10,7 +10,7 @@
 }
 .homeContent h1{
     position: relative;
-    font-size: 5.6rem;
+    font-size: 40px;
     font-weight: 700;
 }
 .homeContent h1::before{
@@ -27,7 +27,7 @@
 
 .homeContent p{
     position: relative;
-    font-size: 1.8rem;
+    font-size: 15px;
     font-weight: 400;
     margin: 2rem 0 4rem;
 }
@@ -47,10 +47,9 @@
     width: 32.8rem;
 }
 .textAnimate h3{
-    font-size: 3.2rem;
+    font-size: 25px;
     font-weight: 700;
     color: var(--main-color);
-    -webkit-text-stroke: .7px var(--main-color);
 }
 .textAnimate h3::before{
     content: "";
@@ -96,7 +95,7 @@
     background-color: var(--main-color);
     border: .2rem solid var(--main-color);
     border-radius: .8rem;
-    font-size: 1.8rem;
+    font-size: 16px;
     font-weight: 700;
     letter-spacing: .1rem;
     color: var(--bg-color);
@@ -160,4 +159,38 @@
         transform: scale(1);
     }
     
+}
+
+@media screen and (max-width: 800px) {
+    .home{
+        padding: 5% 5%;
+    }
+    .homeContent{
+        max-width: 100%;
+    }
+    .homeContent h1{
+        font-size: 30px;
+    }
+    .homeContent p{
+        font-size: 14px;
+    }
+    .textAnimate{
+        width: 100%;
+    }
+    .textAnimate h3{
+        font-size: 20px;
+    }
+    .btnContainer{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .btn{
+        width: 30%;
+        border: .2rem solid var(--main-color);
+        border-radius: .8rem;
+        font-size: 14px;
+    }
+    .contentContainer{
+        flex-direction: column-reverse;
+    }
 }
