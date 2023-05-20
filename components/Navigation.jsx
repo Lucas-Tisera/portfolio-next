@@ -8,17 +8,17 @@ const links =[
         label: 'Home',
         route: '/'
     },{
-        label: 'About',
-        route: '/about'
+        label: 'Experience',
+        route: ''
     },{
         label: 'Education',
-        route: '/education'
+        route: ''
     },{
         label: 'Skills',
-        route: '/skills'
+        route: ''
     },{
         label: 'Contact',
-        route: '/contact'
+        route: ''
     }
 ]
 export function MainHeader(){
@@ -30,11 +30,6 @@ export function MainHeader(){
             <Link href="/" className={styles.logo}>
               Lucas.T - Portfolio
             </Link>
-            <div className={styles.starContainer}>
-              <span className="bx bxs-star" id={styles.star}/>
-              <span className="bx bxs-star" id={styles.star}/>
-              <span className="bx bxs-star" id={styles.star}/>
-            </div>
             <div className="bx bx-menu" id={styles.menuIcon} onClick={()=>setShowNavbar(!showNavbar)}/>
             <ul className={`${showNavbar ? styles.active : "none"} ${styles.navigation}`}>
                 {links.map(({label, route}) => (
@@ -47,6 +42,6 @@ export function MainHeader(){
             </ul>
           </nav>
         </header>
-                </>
+      </>
     )
 }

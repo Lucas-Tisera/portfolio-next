@@ -1,6 +1,10 @@
+html{
+  width: 100%;
+  overflow-x: hidden;
+}
 body {
-  margin:0 auto;
-  padding: 0px;
+  width: 100%;
+  overflow-x: hidden;
   box-sizing: border-box;
   text-decoration: none;
   border: none;

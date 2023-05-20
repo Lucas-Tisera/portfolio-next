@@ -14,6 +14,11 @@ export function ExperienceTimeLine(){
 
     return (
         <section style={{"display":"flex", "flexDirection":"column"}}>
+            <div data-aos="zoom-in" className={styles.title}>
+                <h1>
+                    Experience
+                </h1>
+            </div>
             <div data-aos="fade-right" className={`${styles.container} ${styles.containerLeft}`}>
                 <div className={styles.imageContainer}>
                     <Image src="/static/bdtLogo.png" alt="BDT Global" width={40} height={40} className={styles.logos} />

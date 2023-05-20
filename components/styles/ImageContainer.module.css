@@ -139,17 +139,9 @@
 
 @media screen and (max-width: 800px) {
     .pictureContainer{
-        position:absolute;
-        bottom: 20%;
-        z-index: -10;
-        width: 80%;
-        height: auto;
-        opacity: .5;
-        border: none;
-        box-shadow: none;
+        display: none;
     }
     .picture{
-
-        border-radius: 0rem;
+        display: none;
     }
 }

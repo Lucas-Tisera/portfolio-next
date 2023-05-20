@@ -110,16 +110,18 @@
 }
 
 @media screen and (max-width: 900px) {
+    .header{
+        padding: 2rem 5%;
+        width: 100%;
+    }
     .navigationContainer{
         justify-content: space-between;
     }
     .navigation{
         position: absolute;
+        width: fit-content;
         right: 0;
-        top: 60px;
-        padding: 30px;
         background-color: var(--bg-color);
-        width: 40%;
         height: fit-content;
         box-shadow: 1px 1px 10px rgba(0,0,0,.1);
         flex-direction: column;

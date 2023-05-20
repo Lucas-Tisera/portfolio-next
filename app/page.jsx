@@ -2,6 +2,7 @@ import styles from './HomePage.module.css'
 import { WindowsImageViewer } from '@/components/ImageContainer'
 import { RedesLink } from '@/components/Redes'
 import { ExperienceTimeLine } from '@/components/ExperienceView'
+import { SkillsResume } from '@/components/SkillsView'
 
 
 
@@ -25,8 +26,8 @@ export default function HomePage () {
         <WindowsImageViewer/>
       </div>
     </section>
-    
-    <ExperienceTimeLine/>
+      <ExperienceTimeLine/>
+      <SkillsResume/>
     </>
   )
 };
