@@ -3,6 +3,7 @@ import { WindowsImageViewer } from '@/components/ImageContainer'
 import { RedesLink } from '@/components/Redes'
 import { ExperienceTimeLine } from '@/components/ExperienceView'
 import { SkillsResume } from '@/components/SkillsView'
+import { Pdf } from '@/components/PDF'
 
 
 
@@ -19,7 +20,7 @@ export default function HomePage () {
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium excepturi dolorem et vero odit ipsa delectus nam. Voluptatem perspiciatis molestiae qui laudantium omnis corporis fugit numquam! Facilis eos obcaecati alias!</p>
           <div className={styles.btnContainer}>
             <a href="#" className={styles.btn}>Let&apos;s Talk</a>
-            <a href="#" className={styles.btn}>Download CV</a>
+            <Pdf/>
           </div>
             <RedesLink/>
         </div>
