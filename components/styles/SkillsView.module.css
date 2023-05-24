@@ -20,16 +20,69 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    width: 80%;
+}
+.card{
+    position: relative;
+    min-width: 100px;
+    width: 250px;    
+    height: 300px;
+    margin: 20px;
+    
+}
+
+.card div{
+    position:absolute;
     width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
 }
-.row div div{
+
+.front{
+    background-color: #262B34;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    transform: perspective(600px) rotateY(0deg);
+    transition: all 0.4s ease-in-out;
+    border: 1px solid var(--main-color);
+}
+
+.front div{
     font-size: 70px;
-    transition: all 0.5s ease-in-out;
 }
-.row div div:hover{
-    font-size: 90px;
+
+.back{
+    background-color: #EAEAEB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    transform: perspective(600px) rotateY(180deg);
+    transition: all 0.4s ease-in-out;
+    border: 1px solid var(--main-color);
 }
+.back h3{
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #292B2F;
+}
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
 .nextIcon{
     transition: all 0.5s ease-in-out;
     fill: red;
@@ -38,22 +91,6 @@
     width: 90px;
 }
 
-.itemContent{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-width: 100px;
-    width: 10%;
-    margin: 10px;
-    height: 200px;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
-    box-shadow: inset;
-    transition: all 0.5s ease-in-out;
-    border-bottom: 2px solid var(--main-color);
-}
-.itemContent:hover{
-    transform: scale(1.1);
-    cursor: default;
+.main{
+    width: 650px;
 }
