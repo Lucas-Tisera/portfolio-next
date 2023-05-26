@@ -8,7 +8,7 @@
     color: var(--main-color);
 }
 .container{
-    padding: 10px 50px;
+    padding: 10px 53px;
     position: relative;
     width: 50%;
 }
@@ -35,9 +35,13 @@
 }
 .containerLeft{
     left: 0;
+    padding-left: 9%;
+
 }
 .containerRight{
     left: 50%;
+    padding-right: 9%;
+
 }
 .containerLeft .imageContainer{
     padding: 3px;
@@ -62,6 +66,9 @@
 .textBox h2{
     color: var(--main-color);
     font-weight: 600;
+}
+.textBox h2 small{
+    color: rgb(71, 71, 71);
 }
 
 .textBox small{

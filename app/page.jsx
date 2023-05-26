@@ -17,7 +17,7 @@ export default function HomePage () {
           <div className={styles.textAnimate}>
             <h3>Full Stack Developer</h3>
           </div>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium excepturi dolorem et vero odit ipsa delectus nam. Voluptatem perspiciatis molestiae qui laudantium omnis corporis fugit numquam! Facilis eos obcaecati alias!</p>
+          <p>Hello, and welcome to my portfolio! My name is Lucas Tisera, and I am excited to share with you my skills, experiences, and accomplishments. I am a Full-Stack Developer with a passion for software development. Through this portfolio, I aim to provide you with a comprehensive understanding of who I am, the work I have done, and the value I can bring to your project or organization.</p>
           <div className={styles.btnContainer}>
             <a href="#" className={styles.btn}>Let&apos;s Talk</a>
             <Pdf/>
