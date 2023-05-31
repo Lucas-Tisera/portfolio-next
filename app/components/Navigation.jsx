@@ -6,8 +6,12 @@ import styles from './styles/Navigation.module.css'
 
 export function MainHeader(){
   const [showNavbar, setShowNavbar] = useState(false)
-  const {texts, handleLang} = useContext(LangContext)
-
+  const {texts, handleLang, lang} = useContext(LangContext)
+  const [selected, setSelected] = useState("es")
+  const handleChange = (e) => {
+    setSelected(e.target.checked ? "en" : "es")
+    handleLang(e.target.checked ? "en" : "es")
+  }
   const links =[
       {
           label: texts.home,
@@ -42,12 +46,15 @@ export function MainHeader(){
                     </Link>
                   </li>
                 ))}
-            <div className={styles.lang}>
-              <select onChange={handleLang}>
-                <option value="en" >EN</option>
-                <option value="es" >ES</option>
-              </select>
-            </div>
+                <div className={styles.langContainer}>
+                  <p className={`esp`}>
+                    {lang === "es" ? "Español" : "English"}
+                  </p>
+                  <label className={styles.switch}>
+                    <input type="checkbox" onChange={handleChange} checked={lang === "en" ? true : false} />
+                    <span className={`${styles.slider} ${styles.round}`}></span>
+                  </label>
+                </div>
             </ul>
 
           </nav>
