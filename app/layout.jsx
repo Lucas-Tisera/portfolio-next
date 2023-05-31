@@ -1,6 +1,7 @@
 import "../styles/globals.css"
-import { MainHeader } from "../components/Navigation"
+import { MainHeader } from "./components/Navigation"
 import {font} from "../styles/font"
+import { LangProvider } from "./context/LangContext"
 
 export const metadata = {
   title: 'Portfolio',
@@ -20,8 +21,10 @@ export default function RootLayout({ children }) {
       </head>
       {/* <body className={font.variable}> */}
       <body className={font.className}>
-        <MainHeader/>
-        {children}
+        <LangProvider>
+          <MainHeader/>
+          {children}
+        </LangProvider>
       </body>
     </html>
   )
