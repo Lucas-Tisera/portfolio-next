@@ -5,18 +5,30 @@ import styles from './styles/ExperienceView.module.css'
 import "aos/dist/aos.css"
 import { useContext, useEffect } from 'react'
 import LangContext from '../context/LangContext'
+import NavbarContext from '../context/NavbarContext'
 
 export function ExperienceTimeLine(){
     const {texts} = useContext(LangContext)
+    const {section} = useContext(NavbarContext)
     
     useEffect(() => {
         Aos.init({ duration: 2000 })
     }, [])
     
+    useEffect(() => {
+            if (section === "experience"){
+                const scrollable = document.getElementById(section)
+                scrollable.scrollIntoView({behavior: "smooth"})
+            } else {
+                return
+            }
+    }, [section])
+    
+
     return (
         <section style={{ display:"flex", flexDirection:"column"}}>
             <div data-aos="zoom-in" className={styles.title}>
-                <h1>
+                <h1 id='experience'>
                     {texts.experience}
                 </h1>
             </div>
@@ -27,7 +39,7 @@ export function ExperienceTimeLine(){
                 <div className={styles.textBox} >
                     <h2>BDT Global <small>- {texts.experience}</small> </h2>
                     <small>Feb 2022 - Present</small>
-                    <p>As a Full Stack Developer, I was able to perform my role alongside my teammates to carry out different types of projects, working on both mobile and web applications, contributing the necessary input to ensure smooth progress, while adhering to guidelines and delivery deadlines. This experience has been highly valuable in expanding my knowledge and honing my hard skills, as it involves working with various technologies such as React, React Native, Node, Php, Laravel, and JavaScript, constantly learning something new from them. It has also allowed me to develop soft skills through effective communication within the team and a constant willingness to help, thereby strengthening teamwork, communication, and collaborative problem-solving skills.</p>
+                    <p>{texts.experienceBDT}</p>
                     <span className={styles.containerLeftArrow}></span>
                 </div>
             </div>

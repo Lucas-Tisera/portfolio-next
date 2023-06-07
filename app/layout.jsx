@@ -2,6 +2,7 @@ import "../styles/globals.css"
 import { MainHeader } from "./components/Navigation"
 import {font} from "../styles/font"
 import { LangProvider } from "./context/LangContext"
+import { NavbarProvider } from "./context/NavbarContext"
 
 export const metadata = {
   title: 'Portfolio',
@@ -12,7 +13,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
  return (
-    <html lang="en">
+    <html>
       <head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description}/>
@@ -22,8 +23,10 @@ export default function RootLayout({ children }) {
       {/* <body className={font.variable}> */}
       <body className={font.className}>
         <LangProvider>
-          <MainHeader/>
-          {children}
+          <NavbarProvider>
+            <MainHeader/>
+            {children}
+          </NavbarProvider>
         </LangProvider>
       </body>
     </html>

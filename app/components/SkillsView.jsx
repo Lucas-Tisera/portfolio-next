@@ -5,10 +5,20 @@ import "aos/dist/aos.css"
 import { useContext, useEffect } from 'react'
 import styles from './styles/SkillsView.module.css'
 import LangContext from '../context/LangContext'
+import NavbarContext from '../context/NavbarContext'
 
 export function SkillsResume(){
     const {texts} = useContext(LangContext)
-    
+    const {section, setSection} = useContext(NavbarContext)
+    const scrollable = document.getElementById(section)
+
+    useEffect(() => {
+        if(scrollable) {
+            scrollable.scrollIntoView({behavior: "smooth"})
+            setSection("null")
+        }
+    }, [section])
+
     useEffect(() => {
         Aos.init({ duration: 2000 })
     }, [])
@@ -16,7 +26,7 @@ export function SkillsResume(){
     return (
         <section style={{marginTop:"100px", width:"100%"}}>
             <div className={styles.title}>
-                <h1 >
+                <h1 id="skills" >
                     {texts.skillsTitle}
                 </h1>
             </div>

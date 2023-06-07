@@ -1,5 +1,5 @@
 'use client'
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState } from "react";
 
 const LangContext = createContext();
 const translations = {
@@ -65,10 +65,9 @@ const translations = {
 const initialLang = "en"
 const LangProvider = ({children}) => {
     const [lang, setLang] = useState(initialLang)
-    const [texts, setTexts] = useState(translations[lang])
+    const [texts, setTexts] = useState(translations[initialLang])
     
     const handleLang = (e) =>{
-        console.log(e)
         if(e === "es"){
             setLang("es")
             setTexts(translations.es)

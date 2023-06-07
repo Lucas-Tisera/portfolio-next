@@ -2,20 +2,30 @@
 import Link from "next/link"
 import { useContext, useState } from "react"
 import LangContext from "../context/LangContext"
+import NavbarContext from "../context/NavbarContext"
 import styles from './styles/Navigation.module.css'
 
 export function MainHeader(){
   const [showNavbar, setShowNavbar] = useState(false)
   const {texts, handleLang, lang} = useContext(LangContext)
   const [selected, setSelected] = useState("es")
+  const {setSection} = useContext(NavbarContext)
+  
+  // This code changes the language from English to Spanish
   const handleChange = (e) => {
-    setSelected(e.target.checked ? "en" : "es")
-    handleLang(e.target.checked ? "en" : "es")
+    if (e.target.checked) {
+      setSelected("en")
+      handleLang("en")
+    } else {
+      setSelected("es")
+      handleLang("es")
+    }
   }
+  
   const links =[
       {
           label: texts.home,
-          route: '/'
+          route: 'home'
       },{
           label: texts.experience,
           route: 'experience'
@@ -40,8 +50,8 @@ export function MainHeader(){
             <div className="bx bx-menu" id={styles.menuIcon} onClick={()=>setShowNavbar(!showNavbar)}/>
             <ul className={`${showNavbar ? styles.active : "none"} ${styles.navigation}`}>
                 {links.map(({label, route}) => (
-                  <li key={route} className="active">
-                    <Link href={route}>
+                  <li key={route}>
+                    <Link href={""}  onClick={()=> setSection(route)}>
                       {label}
                     </Link>
                   </li>
@@ -56,7 +66,6 @@ export function MainHeader(){
                   </label>
                 </div>
             </ul>
-
           </nav>
         </header>
       </>
