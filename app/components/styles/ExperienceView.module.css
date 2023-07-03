@@ -4,8 +4,9 @@
     justify-content: center;
     font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 1rem;
     color: var(--main-color);
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 .container{
     padding: 10px 53px;

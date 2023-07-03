@@ -1,34 +1,23 @@
 "use client"
 import Aos from 'aos'
 import Image from 'next/image'
-import styles from './styles/ExperienceView.module.css'
+import styles from '../styles/ExperienceView.module.css'
 import "aos/dist/aos.css"
 import { useContext, useEffect } from 'react'
-import LangContext from '../context/LangContext'
-import NavbarContext from '../context/NavbarContext'
+import LangContext from '../../context/LangContext'
 
 export function ExperienceTimeLine(){
     const {texts} = useContext(LangContext)
-    const {section} = useContext(NavbarContext)
     
     useEffect(() => {
         Aos.init({ duration: 2000 })
     }, [])
     
-    useEffect(() => {
-            if (section === "experience"){
-                const scrollable = document.getElementById(section)
-                scrollable.scrollIntoView({behavior: "smooth"})
-            } else {
-                return
-            }
-    }, [section])
-    
 
     return (
-        <section style={{ display:"flex", flexDirection:"column"}}>
+        <section id='experience' style={{ display:"flex", flexDirection:"column"}}>
             <div data-aos="zoom-in" className={styles.title}>
-                <h1 id='experience'>
+                <h1 >
                     {texts.experience}
                 </h1>
             </div>

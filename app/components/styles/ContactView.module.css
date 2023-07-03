@@ -1,0 +1,134 @@
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--main-color);
+
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.contactContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contactInputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.contactInputs input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-decoration-break: clone;
+}
+
+.contactInputs input:focus{
+    outline: none;
+    border: 2px solid var(--main-color);
+}
+
+.contactMessage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+
+.contactMessage textarea{
+    width: 100%;
+    height: 200px;
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 10px;
+    margin-bottom: 20px;
+    
+}
+
+.contactMessage textarea:focus{
+    outline: none;
+    border: 2px solid var(--main-color);
+}
+
+.submitButtonNormal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.submitButtonOk{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #89BB3C;
+    background-color: #89BB3C;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.submitButtonNok{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #b90e0e;
+    background-color: #b90e0e;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.contactMessage button i{
+    margin-left: 5px;
+}
+
+.submitSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}

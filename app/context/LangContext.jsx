@@ -31,6 +31,14 @@ const translations = {
         description: "Hello, and welcome to my portfolio! My name is Lucas Tisera, and I am excited to share with you my skills, experiences, and accomplishments. I am a Full-Stack Developer with a passion for software development. Through this portfolio, I aim to provide you with a comprehensive understanding of who I am, the work I have done, and the value I can bring to your project or organization.",
         btn: "Let's Talk",
         btn2: "Download CV",
+        contactTitle: "Contact Me",
+        formNombre: "Name",
+        formEmail: "Email",
+        formCel: "Phone",
+        formMensaje: "Message",
+        formSubmit: "Send",
+        emailSend: "Email sent successfully",
+        load: "Sending...",
     },
     es: {
         home: "Inicio",
@@ -60,6 +68,14 @@ const translations = {
         description: "¡Hola y bienvenido a mi portafolio! Mi nombre es Lucas Tisera y estoy emocionado de compartir contigo mis habilidades, experiencias y logros. Soy un desarrollador Full-Stack con pasión por el desarrollo de software. A través de este portafolio, mi objetivo es brindarle una comprensión integral de quién soy, el trabajo que he realizado y el valor que puedo aportar a su proyecto u organización.",
         btn: "Hablemos",
         btn2: "Descargar CV",
+        contactTitle: "Contáctame",
+        formNombre: "Nombre",
+        formEmail: "Correo",
+        formCel: "Celular",
+        formMensaje: "Mensaje",
+        formSubmit: "Enviar",
+        emailSend: "Correo enviado correctamente",
+        load: "Enviando...",
     }
 }
 const initialLang = "en"
