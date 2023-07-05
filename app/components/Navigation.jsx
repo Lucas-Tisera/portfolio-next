@@ -28,9 +28,6 @@ export function MainHeader(){
           label: texts.experience,
           route: '#experience'
       },{
-          label: texts.education,
-          route: '#education'
-      },{
           label: texts.skills,
           route: '#skills'
       },{

@@ -2,6 +2,7 @@ import "../styles/globals.css"
 import { MainHeader } from "./components/Navigation"
 import {font} from "../styles/font"
 import { LangProvider } from "./context/LangContext"
+import { Footer } from "./components/Footer"
 
 export const metadata = {
   title: 'Portfolio',
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
         <LangProvider>
             <MainHeader/>
             {children}
+            <Footer/>
         </LangProvider>
       </body>
     </html>

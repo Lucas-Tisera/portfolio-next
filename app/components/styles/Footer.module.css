@@ -1,0 +1,203 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px;
+    box-shadow: 10px 1px 10px rgba(0,0,0,.1);
+    background-color: rgba(0,0,0,.3); 
+    z-index: 1000;
+}
+.navigationContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    margin-left: 10%;
+    
+}
+.logo{
+    position: relative;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+
+.navigation {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.navigation a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.navigation a:hover{
+    text-decoration: underline;
+
+}
+#menuIcon{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+    margin-right: 10%;
+    align-items: flex-start;
+    gap: 40px;
+    justify-content: space-between;
+
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    gap: 5px;
+    text-decoration: none;
+    color: var(--text-color);
+    flex-direction: row;
+}
+/* .langContainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+} */
+/* .switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(112,167,216);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 17%, rgba(103,184,255,1) 56%);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: yellow;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background: linear-gradient(90deg, #041e42 20%, #9b1c2c 100%);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px var(--main-color);
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+    background-color: white;
+}
+ */
+/* Rounded sliders */
+/* .slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+} */
+/* KEY FRAMES */
+
+/* @keyframes showRight {
+    100%{
+        width: 0%;
+    }
+    0%{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 1000px) {
+    .navigationContainer{
+        justify-content: space-between;
+    }
+    .navigation{
+        position: absolute;
+        right: 0;
+        top: 60px;
+        padding: 30px;
+        background-color: var(--bg-color);
+        width: 30%;
+        height: 100vh;
+        box-shadow: 1px 1px 10px rgba(0,0,0,.1);
+        flex-direction: column;
+        display: none;
+    }
+    .active{
+        display: flex;
+    }
+    #menuIcon{
+        display: block;
+    }    
+}
+
+@media screen and (max-width: 900px) {
+    .header{
+        padding: 2rem 5%;
+        width: 100%;
+    }
+    .navigationContainer{
+        justify-content: space-between;
+    }
+    .navigation{
+        position: absolute;
+        width: fit-content;
+        right: 0;
+        background-color: var(--bg-color);
+        height: fit-content;
+        box-shadow: 1px 1px 10px rgba(0,0,0,.1);
+        flex-direction: column;
+        display: none;
+    }
+    .active{
+        display: flex;
+    }
+    #menuIcon{
+        display: block;
+    }    
+    .starContainer{
+        display: none;
+    }
+} */
