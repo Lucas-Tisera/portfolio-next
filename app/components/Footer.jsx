@@ -32,7 +32,7 @@ export const Footer = () =>{
                 </h1>
                 <ul className={`${showNavbar ? styles.active : "none"} ${styles.navigation}`}>
                     {links.map(({label, route}) => (
-                    <li>
+                    <li key={label}>
                         <a href={route}>
                         {label}
                         </a>
@@ -74,16 +74,16 @@ export const Footer = () =>{
                 <h1>
                     Development
                 </h1>
-                <li>
+                <li key={"1"}>
                     by Lucas Tisera
                 </li>
-                <li>
+                <li key={"2"}>
                     using Next.js
                 </li>
-                <li>
+                <li key={"3"}>
                     desktop version
                 </li>
-                <li>
+                <li key={"4"}>
                     relese in 2023
                 </li>
             </div>
