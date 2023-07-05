@@ -33,7 +33,7 @@ export function ExperienceTimeLine(){
                     <span className={styles.containerLeftArrow}></span>
                 </div>
             </div>
-            <div data-aos="fade-right" className={`${styles.container} ${styles.containerRight}`}>
+            <div data-aos="fade-left" className={`${styles.container} ${styles.containerRight}`}>
                 <div className={styles.imageContainer}>
                     <Image src="/static/bdtLogo.png" alt="BDT Global" width={40} height={40} />
                 </div>
@@ -41,10 +41,10 @@ export function ExperienceTimeLine(){
                     <h2>BDT Global <small>- {texts.experienceTitle}</small> </h2>
                     <small>Feb 2022 - Present</small>
                     <p>{texts.experienceBDT}</p>
-                    <span className={styles.containerLeftArrow}></span>
+                    <span className={styles.containerRightArrow}></span>
                 </div>
             </div>
-            <div data-aos="fade-left" className={`${styles.container} ${styles.containerLeft}`}>
+            <div data-aos="fade-right" className={`${styles.container} ${styles.containerLeft}`}>
                 <div className={styles.imageContainer}>
                     <div className={`bx bxl-github`} style={{color:"#000", fontSize:40}}></div>
                 </div>
@@ -61,11 +61,11 @@ export function ExperienceTimeLine(){
                         <li>Next</li>
                         <li>Git</li>
                     
-                    <span className={styles.containerRightArrow}></span>
+                    <span className={styles.containerLeftArrow}></span>
 
                 </div>
             </div>
-            <div data-aos="fade-right" className={`${styles.container} ${styles.containerRight}`}>
+            <div data-aos="fade-left" className={`${styles.container} ${styles.containerRight}`}>
                 <div className={styles.imageContainer}>
                     <Image src="/static/bdtLogo.png" alt="BDT Global" width={40} height={40} className={styles.logos} />
                 </div>
@@ -74,7 +74,7 @@ export function ExperienceTimeLine(){
                     <small>Jul 2021 - Dec 2021</small>
                     <p>{texts.experienceIntern1}</p>
                     <p>{texts.experienceIntern2}</p>
-                    <span className={styles.containerLeftArrow}></span>
+                    <span className={styles.containerRightArrow}></span>
 
                 </div>
             </div>

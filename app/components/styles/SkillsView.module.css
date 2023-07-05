@@ -147,3 +147,48 @@
 .main{
     width: 400px;
 }
+
+@media screen and (max-width: 800px) {
+    .skillsContainer{
+        flex-direction: column;
+    }
+    .row{
+        display: grid;
+        width: 80%;
+        grid-template-columns: 1fr;
+    }
+    .card{
+        width: 100%;
+        margin: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 800px) {
+    .skillsContainer{
+        flex-direction: column;
+
+    }
+    .row:first-child{
+        display: grid;
+        width: 80%;
+        grid-template-columns: 1fr 1fr 1.5fr 1fr;
+        gap: 20px;
+
+    }
+    .row:last-child{
+        display: grid;
+        width: 80%;
+        grid-template-columns: 1fr 1.5fr 1fr 1fr 1.5fr;
+        gap: 20px;
+
+    }
+    .card{
+        width: 100%;
+        margin: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
