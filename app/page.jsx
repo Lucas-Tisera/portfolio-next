@@ -9,6 +9,13 @@ export default function HomePage () {
       <ExperienceTimeLine/>
       <SkillsResume/>
       <ContactView/>
+      <mark style={{display:"flex", width: "100%", alignItems:"center" , justifyContent:"center"}}>
+        <h2>
+          <b>
+            personal projects coming soon...
+          </b>
+        </h2>
+      </mark>
     </>
   )
 };
