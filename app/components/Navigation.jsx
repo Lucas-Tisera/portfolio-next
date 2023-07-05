@@ -45,7 +45,7 @@ export function MainHeader(){
             <div className="bx bx-menu" id={styles.menuIcon} onClick={()=>setShowNavbar(!showNavbar)}/>
             <ul className={`${showNavbar ? styles.active : "none"} ${styles.navigation}`}>
                 {links.map(({label, route}) => (
-                  <li>
+                  <li key={label}>
                     <a href={route}>
                       {label}
                     </a>
