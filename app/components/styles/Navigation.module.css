@@ -129,6 +129,19 @@ input:checked + .slider:before {
     }
     
 }
+
+@keyframes openMenu {
+    0%{
+        width: 0%;
+        display: flex;
+    }
+    100%{
+        width: 30%;
+    }
+    
+}
+ 
+
 @media screen and (max-width: 1000px) {
     .navigationContainer{
         justify-content: space-between;
@@ -137,13 +150,12 @@ input:checked + .slider:before {
         position: absolute;
         right: 0;
         top: 60px;
-        padding: 30px;
+        
         background-color: var(--bg-color);
-        width: 30%;
-        height: 100vh;
         box-shadow: 1px 1px 10px rgba(0,0,0,.1);
         flex-direction: column;
         display: none;
+        animation: openMenu .5s ease-in-out forwards;
     }
     .active{
         display: flex;

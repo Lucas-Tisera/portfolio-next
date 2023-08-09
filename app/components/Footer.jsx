@@ -65,7 +65,7 @@ export const Footer = () =>{
                     Buenos Aires, Argentina
                 </p>
                 </div>  
-                <Link href={"https://www.linkedin.com/in/lucas-tisera/"} className={styles.link}>
+                <Link target={"_blank"} href={"https://www.linkedin.com/in/lucas-tisera/"} className={styles.link}>
                     <div className={`bx bxl-linkedin`} style={{color:"", fontSize:14}}></div>
                     <p>Lucas Tisera</p>
                 </Link>

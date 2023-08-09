@@ -2,6 +2,8 @@ import { HomeView } from './components/Views/HomeView'
 import { ExperienceTimeLine } from '@/app/components/Views/ExperienceView'
 import { SkillsResume } from '@/app/components/Views/SkillsView'
 import { ContactView } from './components/Views/ContactView'
+import { Analytics } from '@vercel/analytics/react'
+
 export default function HomePage () {
   return(
     <>
@@ -16,6 +18,7 @@ export default function HomePage () {
           </b>
         </h2>
       </mark>
+      <Analytics/>
     </>
   )
 };
